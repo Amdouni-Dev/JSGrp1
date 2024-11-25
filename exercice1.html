@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Demander les entrées utilisateur
+let num1 = parseFloat(prompt("Entrez le premier nombre :"));
+let num2 = parseFloat(prompt("Entrez le deuxième nombre :"));
+let operation = prompt("Entrez l'opération souhaitée (+, -, *, /) :");
+
+// Vérifier l'opération choisie
+switch (operation) {
+    case '+':
+        alert(`Résultat : ${num1 + num2}`);
+        break;
+    case '-':
+        alert(`Résultat : ${num1 - num2}`);
+        break;
+    case '*':
+        alert(`Résultat : ${num1 * num2}`);
+        break;
+    case '/':
+        if (num2 !== 0) {
+            alert(`Résultat : ${num1 / num2}`);
+        } else {
+            alert("Erreur : Division par zéro !");
+        }
+        break;
+    default:
+        alert("Opération non valide !");
+}
+
+    </script>
+</body>
+</html>
